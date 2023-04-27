@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Flask App{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            text-align: center;
+        }
+        a {
+            color: #1675d1;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        input[type="submit"] {
+            background-color: #1675d1;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 1rem 0;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #105ca1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Whiskey{% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

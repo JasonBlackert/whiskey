@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Flask App</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Welcome to Whiskey{% endblock %}
+
+{% block content %}
     <h1>Welcome to Whiskey</h1>
     <a href="/login">Login</a>
-</body>
-</html>
+{% endblock %}
